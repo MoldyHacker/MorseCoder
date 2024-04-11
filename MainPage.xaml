@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MorseCoder.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label Text="Morse Code Input:"/>
+            <Label x:Name="morseInputDisplay"/>
+            <Label Text="Text Output:"/>
+            <Label x:Name="textOutput"/>
+            <HorizontalStackLayout Spacing="15">
+                <Button Text="." Clicked="OnDotClicked"/>
+                <Button Text="-" Clicked="OnDashClicked"/>
+                
+            </HorizontalStackLayout>
+            <Button Text="Space" Clicked="OnSpaceClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
